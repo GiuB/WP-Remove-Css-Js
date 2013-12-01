@@ -1,7 +1,7 @@
 # WP Remove Css - Js
 ## by GiuB: Daniele Covallero
 
-Often in Wordpress sites are installed many plugins and modern template with too many styles and scripts that slow down the loading time of your site.
+Often in Wordpress sites are installed many plugins and modern templates with too many styles and scripts that slow down the loading time of your site.
 
 Remove with WP CSS - Js you can simply exclude .css and .js resources from a few conditional pages and from all template files of your Wordpress theme (follow Warning instructions).
 
