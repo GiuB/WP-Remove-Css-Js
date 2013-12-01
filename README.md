@@ -6,6 +6,20 @@ Remove with WP CSS - Js you can simply exclude .css and .js resources from a few
 
 **WARNING:** This plugin detect styles and scripts only if they use the right functions: wp_register_style, wp_enqueue_style, wp_register_script, wp_enqueue_script.
 
+## Screenshots
+
+- Plugin Tabs to switch and managere sources.
+
+![Plugin Tabs](http://giub.it/wp-content/uploads/2012/06/screenshot-1.jpg)
+
+- Option Buttons
+
+![Option Buttons](http://giub.it/wp-content/uploads/2012/06/screenshot-2.jpg)
+
+- Example source list
+
+![Source list](http://giub.it/wp-content/uploads/2012/06/screenshot-3.jpg)
+
 ## Manual Installation
 
 1. Upload `wp-remove-css-js` directory to your `/wp-content/plugins/` folder or install
@@ -34,20 +48,6 @@ You can easly edit wrong codes by follow theese function references:
 * [wp_enqueue_script()](http://codex.wordpress.org/Function_Reference/wp_enqueue_script)
 
 Alternatively you can enable "Detect during navigation" to start the detection when you open your site pages from your browser (Remember to disable it to speed up your Wordpress).
-
-## Screenshots
-
-- Plugin Tabs to switch and managere sources.
-
-![Plugin Tabs](http://giub.it/wp-content/uploads/2012/06/screenshot-1.jpg)
-
-- Option Buttons
-
-![Option Buttons](http://giub.it/wp-content/uploads/2012/06/screenshot-2.jpg)
-
-- Example source list
-
-![Source list](http://giub.it/wp-content/uploads/2012/06/screenshot-3.jpg)
 
 ## Want to contribute?
 
