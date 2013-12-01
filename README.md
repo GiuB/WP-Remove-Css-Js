@@ -1,5 +1,4 @@
 # WP Remove Css - Js
-## by GiuB: Daniele Covallero
 
 Often in Wordpress sites are installed many plugins and modern templates with too many styles and scripts that slow down the loading time of your site.
 
@@ -13,6 +12,10 @@ Remove with WP CSS - Js you can simply exclude .css and .js resources from a few
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to `Settings->WP Remove Css-Js` and switch to Style/Script tabs.
 4. Use "Refresh" button to auto detect resources or active "Detect during navigation" to start the detection when you open your site pages
+
+## Developers
+
+* Daniele [GiuB](http://giub.it) Covallero
 
 ## Recommended Settings
 
