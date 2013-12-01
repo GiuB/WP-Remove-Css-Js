@@ -1,4 +1,5 @@
-# WP Remove Css - Js - by GiuB - Daniele Covallero
+# WP Remove Css - Js
+## by GiuB: Daniele Covallero
 
 Often in Wordpress sites are installed many plugins and modern template with too many styles and scripts that slow down the loading time of your site.
 
