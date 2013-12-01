@@ -11,7 +11,7 @@ Remove with WP CSS - Js you can simply exclude .css and .js resources from a few
 
 1. Upload `wp-remove-css-js` directory to your `/wp-content/plugins/` folder or install
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to `Settings->Wp Remove Css - Js` and switch to Style/Script tabs.
+3. Go to `Settings->Wp Remove Css-Js` and switch to Style/Script tabs.
 4. Use "Refresh" button to auto detect resources or active "Detect during navigation" to start the detection when you open your site pages
 
 ## Recommended Settings
