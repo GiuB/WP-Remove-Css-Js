@@ -9,10 +9,10 @@ Remove with WP CSS - Js you can simply exclude .css and .js resources from a few
 
 ## Manual Installation
 
-* Upload `wp-remove-css-js` directory to your `/wp-content/plugins/` folder or install
-* Activate the plugin through the 'Plugins' menu in WordPress
-* Go to `Settings->Wp Remove Css - Js` and switch to Style/Script tabs.
-* Use "Refresh" button to auto detect resources or active "Detect during navigation" to start the detection when you open your site pages
+1. Upload `wp-remove-css-js` directory to your `/wp-content/plugins/` folder or install
+2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Go to `Settings->Wp Remove Css - Js` and switch to Style/Script tabs.
+4. Use "Refresh" button to auto detect resources or active "Detect during navigation" to start the detection when you open your site pages
 
 ## Recommended Settings
 
@@ -25,20 +25,25 @@ Advance users likes this plugin because it speed up the page loading by remove u
 Because your theme or external plugins includes wrongly them.
 You can easly edit wrong codes by follow theese function references:
 
-* [wp_register_style](http://codex.wordpress.org/Function_Reference/wp_register_style)
-* [wp_enqueue_style](http://codex.wordpress.org/Function_Reference/wp_enqueue_style)
-* [wp_register_script](http://codex.wordpress.org/Function_Reference/wp_register_script)
-* [wp_enqueue_script](http://codex.wordpress.org/Function_Reference/wp_enqueue_script)
+* [wp_register_style()](http://codex.wordpress.org/Function_Reference/wp_register_style)
+* [wp_enqueue_style()](http://codex.wordpress.org/Function_Reference/wp_enqueue_style)
+* [wp_register_script()](http://codex.wordpress.org/Function_Reference/wp_register_script)
+* [wp_enqueue_script()](http://codex.wordpress.org/Function_Reference/wp_enqueue_script)
 
 Alternatively you can enable "Detect during navigation" to start the detection when you open your site pages from your browser (Remember to disable it to speed up your Wordpress).
 
 ## Screenshots
 
 ![Plugin Tabs](http://giub.it/wp-content/uploads/2012/06/screenshot-1.jpg)
+
 1. Plugin Tabs to switch and managere sources.
+
 ![Option Buttons](http://giub.it/wp-content/uploads/2012/06/screenshot-2.jpg)
+
 2. Option Buttons
+
 ![Source list](http://giub.it/wp-content/uploads/2012/06/screenshot-3.jpg)
+
 3. Example source list
 
 ## Want to contribute?
@@ -53,4 +58,5 @@ Want to thanks me on Twitter or follow me on my blog?
 ## Changelog
 
 = 1.0 =
+
 Initial version

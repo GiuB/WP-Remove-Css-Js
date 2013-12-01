@@ -12,7 +12,7 @@ Remove useless Css - Js files from some conditionals and theme pages.
 
 == Description ==
 
-Often in Wordpress sites are installed many plugins and modern template with too many styles and scripts that slow down the loading time of your site.
+Often in Wordpress sites are installed many plugins and modern templates with too many styles and scripts that slow down the loading time of your site.
 
 Remove with WP CSS - Js you can simply exclude .css and .js resources from a few conditional pages and from all template files of your Wordpress theme (follow Warning instructions).
 
@@ -28,7 +28,7 @@ Want to thanks me on Twitter or follow me on my blog?
 * [giub.it](http://giub.it)
 
 = Recommended Settings =
-Advance users like this plugin because it speed up the page loading by remove usless resources but developers reccomended to use together a php cache plugin like [WP Super Cache](http://wordpress.org/plugins/wp-super-cache/).
+Advance users likes this plugin because it speed up the page loading by remove usless resources but developers reccomended to use together a php cache plugin like [WP Super Cache](http://wordpress.org/plugins/wp-super-cache/).
 
 == Installation ==
 
