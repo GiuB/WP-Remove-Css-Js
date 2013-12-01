@@ -34,7 +34,7 @@ Advance users likes this plugin because it speed up the page loading by remove u
 
 1. Upload `wp-remove-css-js` directory to your `/wp-content/plugins/` folder or install
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to `Settings->Wp Remove Css-Js` and switch to Style/Script tabs.
+1. Go to `Settings->WP Remove Css-Js` and switch to Style/Script tabs.
 1. Use "Refresh" button to auto detect resources or active "Detect during navigation" to start the detection when you open your site pages
 
 
