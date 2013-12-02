@@ -14,11 +14,11 @@ Remove useless Css - Js files from some conditionals and theme pages.
 
 == Description ==
 
-Often in Wordpress sites are installed many plugins and modern templates with too many styles and scripts that slow down the loading time of your site.
+In Wordpress sites there are often installed many plugins and modern templates with too many styles and scripts that slow down the loading time of your site.
 
-Remove with WP CSS - Js you can simply exclude .css and .js resources from a few conditional pages and from all template files of your Wordpress theme (follow Warning instructions).
+With Remove WP CSS - Js you can simply exclude .css and .js resources from a few conditional pages and from all template files of your Wordpress theme (follow Warning instructions).
 
-**WARNING:** This plugin detect styles and scripts only if they use the right functions: wp_register_style, wp_enqueue_style, wp_register_script, wp_enqueue_script.
+**WARNING:** This plugin detect styles and scripts only if they use the right functions: wp_register_style(), wp_enqueue_style(), wp_register_script(), wp_enqueue_script().
 
 Want to contribute?
 
@@ -34,7 +34,7 @@ Advance users likes this plugin because it speed up the page loading by remove u
 
 == Installation ==
 
-1. Upload `wp-remove-css-js` directory to your `/wp-content/plugins/` folder or install
+1. Upload `wp-remove-css-js` directory to your `/wp-content/plugins/` folder
 1. Activate the plugin through the 'Plugins' menu in WordPress
 1. Go to `Settings->WP Remove Css-Js` and switch to Style/Script tabs.
 1. Use "Refresh" button to auto detect resources or active "Detect during navigation" to start the detection when you open your site pages
