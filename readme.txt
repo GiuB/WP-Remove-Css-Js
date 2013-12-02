@@ -1,7 +1,9 @@
 === WP Remove Css - Js ===
-Contributors: Daniele Covallero
+Contributors: GiuB
 Donate link: https://www.paypal.com/uk/cgi-bin/webscr?cmd=_flow&dispatch=5885d80a13c0db1f8e263663d3faee8def8934b92a630e40b7fef61ab7e9fe63&SESSION=UklyODvnG0uWIQPHSwYGuaQimVP7misqpOCHfT0cgq8DViM1u7Nds0RZ4Ja
-Tags: plugin, css, script, remove, javascript
+Tags: plugin, css, script, remove, javascript, speed
+Author URI: http://giub.it
+Author: Daniele Covallero
 Requires at least: 3.2
 Tested up to: 3.6
 Stable tag: 4.3
@@ -45,10 +47,10 @@ Advance users likes this plugin because it speed up the page loading by remove u
 Because your theme or external plugins includes wrongly them.
 You can easly edit wrong codes by follow theese function references:
 
-1. [wp_register_style](http://codex.wordpress.org/Function_Reference/wp_register_style)
-1. [wp_enqueue_style](http://codex.wordpress.org/Function_Reference/wp_enqueue_style)
-1. [wp_register_script](http://codex.wordpress.org/Function_Reference/wp_register_script)
-1. [wp_enqueue_script](http://codex.wordpress.org/Function_Reference/wp_enqueue_script)
+1. [wp_register_style()](http://codex.wordpress.org/Function_Reference/wp_register_style)
+1. [wp_enqueue_style()](http://codex.wordpress.org/Function_Reference/wp_enqueue_style)
+1. [wp_register_script()](http://codex.wordpress.org/Function_Reference/wp_register_script)
+1. [wp_enqueue_script()](http://codex.wordpress.org/Function_Reference/wp_enqueue_script)
 
 Alternatively you can enable "Detect during navigation" to start the detection when you open your site pages from your browser (Remember to disable it to speed up your Wordpress).
 
