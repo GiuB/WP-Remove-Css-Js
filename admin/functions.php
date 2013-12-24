@@ -218,12 +218,3 @@ function wp_ex_install() {
     //Add Wp-opt enable navigation detecting
     update_option(WP_EXNAVIGATION_DETECT, 'false') || add_option(WP_EXNAVIGATION_DETECT, 'false');
 }
-
-//Include Css
-wp_register_style(WP_EXPLUGIN_NAME, WP_EXCSS);
-wp_enqueue_style(WP_EXPLUGIN_NAME);
-
-//Include Js
-wp_register_script(WP_EXPLUGIN_NAME, WP_EXJS);
-wp_enqueue_script(WP_EXPLUGIN_NAME);
-

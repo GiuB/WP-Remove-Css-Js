@@ -7,6 +7,7 @@ class g_Exclude {
 	public function __construct() {
 		add_action( 'admin_menu', array( $this, 'admin_menu')); //Callback creazione Menu (*1)
 		add_action( 'admin_init', array( $this, 'register_mysettings' )); //Callback salvataggio variabili (*2)
+		add_action( 'admin_enqueue_scripts', array( $this, 'scripts' ) ); // Callback to enqueue scripts and styles.
 	}
 	public function admin_menu () {
 		add_options_page(WP_EXPLUGIN_NAME,WP_EXPLUGIN_NAME,'manage_options',WP_EXPLUGIN_URL,array($this, 'settings_page'));
@@ -17,6 +18,31 @@ class g_Exclude {
 	 	//(*3) SALVATAGGIO VARIABILI TRAMITE CALLBACK
 		register_setting('g_Exclude_group', 'wp_ex_Opt', array($this, 'save_settings'));
         $this->populate_form($tab);
+    }
+
+    /**
+     * Register the admin scripts and styles.
+     *
+     * If the current admin page is the plugin's settings page, we also enqueue the
+     * scripts/styles.
+     */
+    public function scripts() {
+
+    	// CSS
+    	wp_register_style( WP_EXPLUGIN_NAME, WP_EXCSS );
+
+    	// JS
+    	wp_register_script( WP_EXPLUGIN_NAME, WP_EXJS, array( 'jquery' ) );
+
+    	// Enqueue if on the settings page.
+    	if ( isset( $_REQUEST['page'] ) && 'wperemove' == $_REQUEST['page'] ) {
+
+    		// CSS
+    		wp_enqueue_style( WP_EXPLUGIN_NAME );
+
+			// JS
+			wp_enqueue_script( WP_EXPLUGIN_NAME );
+    	}
     }
 
     ## --- START - (*3) SALVATAGGIO VARIABILI TRAMITE CALLBACK -- ##
@@ -76,7 +102,7 @@ class g_Exclude {
 
     #
     ## --- END - (*4) AGGIUNTA DELLE FIELDS PER LA FORM + CREAZIONE TRAMITE CALLBACK -- ##
-    
+
     public function print_submit_button() {
         submit_button();
     }
