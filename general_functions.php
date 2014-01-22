@@ -80,6 +80,18 @@ function wp_ex_stored_update_visible($update_handled, $visible = '1') {
 	}
 }
 
+/**
+ * Get stored handles to be deregistered.
+ *
+ * The results are filtered based on the handle type, and a given template. A further
+ * condition is imposed internally, based on the current conditional. If no
+ * conditional is currently true, then an empty array will be returned.
+ *
+ * @param string $type     The type of handle, 'script' or 'style'.
+ * @param string $template The template the handle might be enqueued on.
+ *
+ * @return array All the handles of $type, that should be deregistered for $template.
+ */
 function wp_ex_deregister_stored($type, $template) {
 	global $wpdb, $tmp_template;
 
@@ -88,11 +100,26 @@ function wp_ex_deregister_stored($type, $template) {
 
 	//Check Conditionals
 	$cond = wp_ex_is_conditionals();
-	if(!empty($cond)) {
-		$cond = " AND handle_conditional_page = '".$cond."'";
+	if ( empty($cond) ) {
+		return array();
 	}
 
-	$handled = $wpdb->get_results("SELECT * FROM $wp_ex_tb WHERE handle_type = '$type' AND handle_template = '".$template."' AND handle_status = 0 ".$cond);
+	$handled = $wpdb->get_results(
+		$wpdb->prepare(
+			"
+				SELECT *
+				FROM $wp_ex_tb
+				WHERE handle_type = %s
+					AND handle_template = %s
+					AND handle_status = 0
+					AND handle_conditional_page = %s
+			"
+			,$type
+			,$template
+			,$cond
+		)
+	);
+
 	return $handled;
 }
 
